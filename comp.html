@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC</title>
+    <link rel="stylesheet" href="E:\Projects\olegPraktica\style.css">
+
+</head>
+<a href="javascript:history.back();">[Go Back]</a>
+  <div class="main">
+    <h1 class="h1">Comp List</h1>
+    <hr class="hr">
+    <input type="text" id="addid" placeholder="Comp Id">
+    <input id="addaudit" placeholder="Аудитория" type="text">
+    <input id="addotv" placeholder="Ответсвенный" type="text">
+    
+    <button class="addBut" type="button" onclick="insertRow('myTable');return false;">Добавить</button>
+    <hr class="hr">
+  </div>
+  <div class="table__Sort">
+    <table id="myTable" cellspacing="0" border="1">
+      <tbody>
+        <tr>
+          <td></td>
+          <td>Номер</td>
+          <td>Аудитория</td>
+          <td>Ответственный</td>
+          <ol hidden id="olHid">
+              <li id="liHid"></li>
+          </ol>
+          <!--<td>Price $</td>
+          <td>Action1</td>
+          <td>Action2</td>-->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<script src="E:\Projects\olegPraktica\table.js"></script>
+
+</body>
+</html>

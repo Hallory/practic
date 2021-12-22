@@ -1,0 +1,133 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+/* ------------------------MAIN HTML---------------------------*/
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.navigation{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    
+}
+.comp:hover{
+    background: rgb(159, 153, 248);
+}
+.audit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    
+}
+.audit:hover{
+    background: rgb(159, 153, 248);
+}
+.garnitura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    
+    }
+.garnitura:hover{
+    background: rgb(159, 153, 248);
+}
+.tipObject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    
+}
+.tipObject:hover{
+    background: rgb(159, 153, 248);
+}
+
+/* ------------------------Comp HTML---------------------------*/
+.myTable{
+    width: 100%;
+    margin-top: 10px;
+    counter-reset: rowNumber;
+}
+table tbody tr{
+    counter-increment: rowNumber;
+}
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+.table__Sort{
+    width: 100%;
+}
+.addBut{
+    width: 90px;
+    height: 35px;
+    border: none;
+    
+}
+.addBut:hover{
+    color: cadetblue;
+}
+
+/* ------------------------Input Styling---------------------------*/
+#addid{
+    width: 180px;
+    height: 25px;
+    border-radius: 1px;
+    
+}
+#addaudit{
+    width: 180px;
+    height: 25px;
+    border-radius: 1px;
+    
+}#addotv{
+    width: 180px;
+    height: 25px;
+    border-radius: 1px;
+    
+}
