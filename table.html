@@ -1,0 +1,32 @@
+<script language="javascript">
+    function exportF() {
+//Format your table with form data
+document.getElementById("input").innerHTML = document.getElementById("text").value;
+ document.getElementById("input1").innerHTML = document.getElementById("text1").value;
+var table = document.getElementById("table");
+var html = table.outerHTML;
+
+var url = 'data:application/vnd.C:\\Users\WB-02\desktop\Book1.xlsx,' + escape(html); // Set your html table into url 
+var link = document.getElementById("downloadLink");
+link.setAttribute("href", url);
+link.setAttribute("download", "export.xls"); // Choose the file name
+link.click(); // Download your excel file   
+return false;
+}
+  </script>
+</head>
+<body>
+<form onsubmit="return exportF()">
+<input id="text" type="text" />
+<input id="text1" type="text" />
+<input type="submit" />
+</form>
+
+<table id="table" style="display: none">
+<tr>
+  <td id="input">
+  <td id="input1">
+  </td>
+</tr>
+</table>
+<a style="display: none" id="downloadLink"></a>
