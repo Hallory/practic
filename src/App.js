@@ -8,17 +8,17 @@ import readXlsxFile from 'read-excel-file'
 
 const defaultObjects = [
   // Object #1
-  {
-    id: 11,
-    room: 115,
-    responsible: 'Shevchenko'
-  },
+  //{
+   // id: 11,
+  //  room: 115,
+    //responsible: 'Shevchenko'
+ // },
   // Object #2
-  {
-    id: 12,
-    room: 115,
-    responsible: 'Shevchenko'
-  },
+  //{
+  //  id: 12,
+   // room: 115,
+   // responsible: 'Shevchenko'
+ // },
 ]
 
 const schema = [
@@ -98,11 +98,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="Apreact-scripts startp-logo App-logo" alt="logo" />
         <input type="file" accept=".xlsx" placeholder="Upload .xlsx file" onChange={handleUpload} />
         <Inputs onAdd={handleAdd} />
         <Table data={objects} schema={schema} onDelete={handleDelete}/>
-        <button onClick={click}>click</button>
+        <button onClick={click}>Скачать xlsx файл</button>
       </header>
     </div>
   );
